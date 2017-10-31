@@ -1,8 +1,7 @@
-package com.sigmastudios.mtools.item.items;
+package com.sigmastudios.mtools.item.tools;
 
 import com.sigmastudios.mtools.MoreTools;
 import net.minecraft.item.EnumRarity;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemPickaxe;
 import net.minecraft.item.ItemStack;
 
