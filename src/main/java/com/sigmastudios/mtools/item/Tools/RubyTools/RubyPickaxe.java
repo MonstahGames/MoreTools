@@ -18,7 +18,7 @@ public class RubyPickaxe extends ItemPickaxe
     @Override
     public EnumRarity getRarity(ItemStack stack)
     {
-        return EnumRarity.EPIC;
+        return EnumRarity.RARE;
     }
     public void registerItemModel(String name)
     {
