@@ -20,9 +20,9 @@ public class RubyPickaxe extends ItemPickaxe
     {
         return EnumRarity.EPIC;
     }
-    public void registerItemModel()
+    public void registerItemModel(String name)
     {
-        MoreTools.proxy.registerItemRenderer(this, 0, "ruby_pickaxe");
+        MoreTools.proxy.registerItemRenderer(this, 0, name);
     }
     public static void register ()
     {
