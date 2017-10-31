@@ -1,14 +1,14 @@
 [
 {
-  "modid": "examplemod",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
+  "modid": "mtools",
+  "name": "More Tools",
+  "description": "A mod that adds ores and tools.",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
-  "authorList": ["ExampleDude"],
-  "credits": "The Forge and FML guys, for making this example",
+  "authorList": ["Monstahhh"],
+  "credits": "The Forge and FML guys, for making the tools that allow us to make mods.",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []
