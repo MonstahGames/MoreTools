@@ -1,4 +1,4 @@
-package com.sigmastudios.mtools.item.tools;
+package com.sigmastudios.mtools.item.Tools.RubyTools;
 
 import com.sigmastudios.mtools.MoreTools;
 import net.minecraft.item.EnumRarity;
