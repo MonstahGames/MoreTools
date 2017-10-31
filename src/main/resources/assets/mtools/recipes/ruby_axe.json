@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " ##",
+    " s#",
+    " s "
+  ],
+  "key":
+  {
+    "#":
+    {
+      "item": "mtools:ruby_ingot"
+    },
+    "s":
+    {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "mtools:ruby_axe"
+  }
+}
