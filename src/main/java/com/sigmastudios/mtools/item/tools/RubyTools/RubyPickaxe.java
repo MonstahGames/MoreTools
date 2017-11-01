@@ -1,19 +1,20 @@
-package com.sigmastudios.mtools.item.Tools.RubyTools;
+package com.sigmastudios.mtools.item.tools.RubyTools;
 
 import com.sigmastudios.mtools.MoreTools;
 import net.minecraft.item.EnumRarity;
+import net.minecraft.item.ItemPickaxe;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemSword;
 
-public class RubySword extends ItemSword
+public class RubyPickaxe extends ItemPickaxe
 {
-    public RubySword(ToolMaterial material, String name)
+    public RubyPickaxe(ToolMaterial material, String name)
     {
         super(material);
-        setUnlocalizedName(name);
-        setRegistryName(name);
-        setCreativeTab(MoreTools.tab);
+        this.setUnlocalizedName(name);
+        this.setRegistryName(name);
+        this.setCreativeTab(MoreTools.tab);
     }
+
     @Override
     public EnumRarity getRarity(ItemStack stack)
     {
@@ -22,5 +23,9 @@ public class RubySword extends ItemSword
     public void registerItemModel(String name)
     {
         MoreTools.proxy.registerItemRenderer(this, 0, name);
+    }
+    public static void register ()
+    {
+
     }
 }

@@ -1,13 +1,13 @@
-package com.sigmastudios.mtools.item.Tools.RubyTools;
+package com.sigmastudios.mtools.item.tools.RubyTools;
 
 import com.sigmastudios.mtools.MoreTools;
 import net.minecraft.item.EnumRarity;
-import net.minecraft.item.ItemSpade;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemSword;
 
-public class RubyShovel extends ItemSpade
+public class RubySword extends ItemSword
 {
-    public RubyShovel(ToolMaterial material, String name)
+    public RubySword(ToolMaterial material, String name)
     {
         super(material);
         setUnlocalizedName(name);

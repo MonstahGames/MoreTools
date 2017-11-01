@@ -22,7 +22,7 @@ public class MoreTools
 {
     public static final String MODID = "mtools";
     public static final String VERSION = "1.0";
-    public static final String NAME = "More Tools";
+    public static final String NAME = "More tools";
 
     public static final String CLProxy = "com.sigmastudios.mtools.proxy.ClientProxy";
     public static final String CProxy = "com.sigmastudios.mtools.proxy.CommonProxy";

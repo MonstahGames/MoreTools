@@ -1,10 +1,10 @@
 package com.sigmastudios.mtools.item;
 
-import com.sigmastudios.mtools.item.Tools.RubyTools.RubyAxe;
-import com.sigmastudios.mtools.item.Tools.RubyTools.RubyShovel;
-import com.sigmastudios.mtools.item.Tools.RubyTools.RubySword;
+import com.sigmastudios.mtools.item.tools.RubyTools.RubyAxe;
+import com.sigmastudios.mtools.item.tools.RubyTools.RubyShovel;
+import com.sigmastudios.mtools.item.tools.RubyTools.RubySword;
 import com.sigmastudios.mtools.item.ore.item.RubyIngot;
-import com.sigmastudios.mtools.item.Tools.RubyTools.RubyPickaxe;
+import com.sigmastudios.mtools.item.tools.RubyTools.RubyPickaxe;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.registries.IForgeRegistry;
