@@ -1,14 +1,15 @@
-package com.sigmastudios.mtools.item.ore;
+package com.sigmastudios.mtools.item.Tools.RubyTools;
 
 import com.sigmastudios.mtools.MoreTools;
 import net.minecraft.item.EnumRarity;
-import net.minecraft.item.Item;
+import net.minecraft.item.ItemSpade;
 import net.minecraft.item.ItemStack;
 
-public class RubyIngot extends Item
+public class RubyShovel extends ItemSpade
 {
-    public RubyIngot (String name)
+    public RubyShovel(ToolMaterial material, String name)
     {
+        super(material);
         setUnlocalizedName(name);
         setRegistryName(name);
         setCreativeTab(MoreTools.tab);
