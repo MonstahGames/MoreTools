@@ -1,11 +1,11 @@
 package com.sigmastudios.mtools;
 
 import com.sigmastudios.mtools.item.ModItems;
+import com.sigmastudios.mtools.item.ore.block.ModBlocks;
 import com.sigmastudios.mtools.proxy.CommonProxy;
 import com.sigmastudios.mtools.tab.CreativeTab;
 import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
@@ -39,14 +39,21 @@ public class MoreTools
     public static class RegistrationHandler
     {
         @SubscribeEvent
+        public static void registerBlocks(RegistryEvent.Register<Block> event)
+        {
+            ModBlocks.register(event.getRegistry());
+        }
+        @SubscribeEvent
         public static void registerItems(RegistryEvent.Register<Item> event)
         {
             ModItems.register(event.getRegistry());
+            ModBlocks.registerItemBlocks(event.getRegistry());
         }
         @SubscribeEvent
         public static void registerItem (ModelRegistryEvent event)
         {
             ModItems.registerModels();
+            ModBlocks.registerModels();
         }
     }
 

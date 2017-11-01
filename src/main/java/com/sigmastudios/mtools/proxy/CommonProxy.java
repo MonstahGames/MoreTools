@@ -1,6 +1,6 @@
 package com.sigmastudios.mtools.proxy;
 
-import com.sigmastudios.mtools.item.ore.WorldOreGen;
+import com.sigmastudios.mtools.world.ModWorldGen;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
@@ -20,7 +20,7 @@ public class CommonProxy
     }
     public void init(FMLInitializationEvent event)
     {
-        GameRegistry.registerWorldGenerator(new WorldOreGen(), 0);
+        GameRegistry.registerWorldGenerator(new ModWorldGen(), 0);
     }
     public void postInit(FMLPostInitializationEvent event)
     {

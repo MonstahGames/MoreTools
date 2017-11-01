@@ -9,6 +9,7 @@ public class RubyIngot extends Item
 {
     public RubyIngot (String name)
     {
+        super();
         setUnlocalizedName(name);
         setRegistryName(name);
         setCreativeTab(MoreTools.tab);
