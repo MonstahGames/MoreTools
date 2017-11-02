@@ -7,8 +7,11 @@ import com.sigmastudios.mtools.proxy.CommonProxy;
 import com.sigmastudios.mtools.tab.CreativeTab;
 import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.SoundEvents;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemArmor;
 import net.minecraftforge.client.event.ModelRegistryEvent;
+import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -31,6 +34,9 @@ public class MoreTools
     public static final String CProxy = "com.sigmastudios.mtools.proxy.CommonProxy";
 
     public static final Logger LOGGER = LogManager.getLogger(MODID.toUpperCase());
+
+    public static final ItemArmor.ArmorMaterial rubyArmorMaterial = EnumHelper.addArmorMaterial("RUBY", MODID + ":ruby", 15, new int[]{2, 5, 6, 2}, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F);
+
 
     @SidedProxy(clientSide = CLProxy, serverSide = CProxy)
     public static CommonProxy proxy;

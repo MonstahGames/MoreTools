@@ -1,10 +1,13 @@
 package com.sigmastudios.mtools.item;
 
+import com.sigmastudios.mtools.MoreTools;
+import com.sigmastudios.mtools.item.armor.ruby.RubyHelmet;
 import com.sigmastudios.mtools.item.tools.RubyTools.RubyAxe;
 import com.sigmastudios.mtools.item.tools.RubyTools.RubyShovel;
 import com.sigmastudios.mtools.item.tools.RubyTools.RubySword;
 import com.sigmastudios.mtools.item.ore.item.RubyIngot;
 import com.sigmastudios.mtools.item.tools.RubyTools.RubyPickaxe;
+import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.registries.IForgeRegistry;
@@ -22,6 +25,8 @@ public class ModItems
     public static RubyAxe rubyAxe = new RubyAxe(RUBYAXE, 3.75F, 1, "ruby_axe");
     public static RubyShovel rubyShovel = new RubyShovel(RUBYSHOVEL, "ruby_shovel");
 
+    public static RubyHelmet rubyHelmet = new RubyHelmet(MoreTools.rubyArmorMaterial, EntityEquipmentSlot.HEAD, "ruby_helmet");
+
 
     public static void register(IForgeRegistry<Item> registry)
     {
@@ -30,6 +35,7 @@ public class ModItems
         registry.register(rubyPickaxe);
         registry.register(rubyAxe);
         registry.register(rubyShovel);
+        registry.register(rubyHelmet);
     }
     public static void registerModels ()
     {
@@ -38,5 +44,6 @@ public class ModItems
         rubyPickaxe.registerItemModel("ruby_pickaxe");
         rubyAxe.registerItemModel("ruby_axe");
         rubyShovel.registerItemModel("ruby_shovel");
+        rubyHelmet.registerItemModel("ruby_helmet");
     }
 }
