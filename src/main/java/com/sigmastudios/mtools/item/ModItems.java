@@ -1,8 +1,10 @@
 package com.sigmastudios.mtools.item;
 
 import com.sigmastudios.mtools.MoreTools;
+import com.sigmastudios.mtools.item.armor.ruby.RubyBoots;
 import com.sigmastudios.mtools.item.armor.ruby.RubyChestplate;
 import com.sigmastudios.mtools.item.armor.ruby.RubyHelmet;
+import com.sigmastudios.mtools.item.armor.ruby.RubyLeggings;
 import com.sigmastudios.mtools.item.tools.RubyTools.RubyAxe;
 import com.sigmastudios.mtools.item.tools.RubyTools.RubyShovel;
 import com.sigmastudios.mtools.item.tools.RubyTools.RubySword;
@@ -28,6 +30,8 @@ public class ModItems
 
     public static RubyHelmet rubyHelmet = new RubyHelmet(MoreTools.rubyArmorMaterial, EntityEquipmentSlot.HEAD, "ruby_helmet");
     public static RubyChestplate rubyChestplate = new RubyChestplate(MoreTools.rubyArmorMaterial, EntityEquipmentSlot.CHEST, "ruby_chestplate");
+    public static RubyLeggings rubyLeggings = new RubyLeggings(MoreTools.rubyArmorMaterial, EntityEquipmentSlot.LEGS, "ruby_leggings");
+    public static RubyBoots rubyBoots = new RubyBoots(MoreTools.rubyArmorMaterial, EntityEquipmentSlot.FEET, "ruby_boots");
 
 
     public static void register(IForgeRegistry<Item> registry)
@@ -39,6 +43,8 @@ public class ModItems
         registry.register(rubyShovel);
         registry.register(rubyHelmet);
         registry.register(rubyChestplate);
+        registry.register(rubyLeggings);
+        registry.register(rubyBoots);
     }
     public static void registerModels ()
     {
@@ -49,5 +55,7 @@ public class ModItems
         rubyShovel.registerItemModel("ruby_shovel");
         rubyHelmet.registerItemModel("ruby_helmet");
         rubyChestplate.registerItemModel("ruby_chestplate");
+        rubyLeggings.registerItemModel("ruby_leggings");
+        rubyBoots.registerItemModel("ruby_boots");
     }
 }
