@@ -1,9 +1,8 @@
-package com.sigmastudios.mtools.item.ore.block.blocks;
+package com.sigmastudios.mtools.item.ore.block.blocks.ruby;
 
 import com.sigmastudios.mtools.MoreTools;
 import com.sigmastudios.mtools.item.ore.block.BlockBase;
 import net.minecraft.block.material.Material;
-import net.minecraft.creativetab.CreativeTabs;
 
 public class RubyOre extends BlockBase
 {

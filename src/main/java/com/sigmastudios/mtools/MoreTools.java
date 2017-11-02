@@ -1,6 +1,7 @@
 package com.sigmastudios.mtools;
 
 import com.sigmastudios.mtools.item.ModItems;
+import com.sigmastudios.mtools.item.ModSmelting;
 import com.sigmastudios.mtools.item.ore.block.ModBlocks;
 import com.sigmastudios.mtools.proxy.CommonProxy;
 import com.sigmastudios.mtools.tab.CreativeTab;
@@ -70,6 +71,7 @@ public class MoreTools
     @EventHandler
     public void init (FMLInitializationEvent event)
     {
+        ModSmelting.init();
         proxy.init(event);
     }
     @EventHandler

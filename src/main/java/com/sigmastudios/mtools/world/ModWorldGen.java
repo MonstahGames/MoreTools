@@ -2,7 +2,6 @@ package com.sigmastudios.mtools.world;
 
 import com.google.common.base.Predicate;
 import com.sigmastudios.mtools.item.ore.block.ModBlocks;
-import com.sigmastudios.mtools.item.ore.block.blocks.RubyOre;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.block.state.pattern.BlockMatcher;
 import net.minecraft.init.Blocks;
@@ -18,8 +17,7 @@ import java.util.Random;
 public class ModWorldGen implements IWorldGenerator
 {
     @Override
-    public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator,
-                         IChunkProvider chunkProvider)
+    public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider)
     {
         int dimension = world.provider.getDimension();
         {
@@ -44,8 +42,7 @@ public class ModWorldGen implements IWorldGenerator
             int posX = blockXPos + random.nextInt(maxX);
             int posY = minY + random.nextInt(diffMinMaxY);
             int posZ = blockZPos + random.nextInt(maxZ);
-            (new WorldGenMinable(block, maxVeinSize, blockToSpawnIn)).generate(world, random,
-                    new BlockPos(posX, posY, posZ));
+            (new WorldGenMinable(block, maxVeinSize, blockToSpawnIn)).generate(world, random, new BlockPos(posX, posY, posZ));
         }
     }
 }
