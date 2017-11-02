@@ -14,11 +14,6 @@ public class RubyIngot extends Item
         setRegistryName(name);
         setCreativeTab(MoreTools.tab);
     }
-    @Override
-    public EnumRarity getRarity(ItemStack stack)
-    {
-        return EnumRarity.RARE;
-    }
     public void registerItemModel(String name)
     {
         MoreTools.proxy.registerItemRenderer(this, 0, name);
