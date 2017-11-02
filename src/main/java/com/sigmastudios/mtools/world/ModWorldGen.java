@@ -29,8 +29,8 @@ public class ModWorldGen implements IWorldGenerator
     }
 
     private void genRuby(World world, Random random, int chunkX, int chunkZ) {
-        //addOreSpawn(ModBlocks.rubyOre.getDefaultState(), world, random, chunkX, chunkZ, 16, 16, 10, 20, 10, 80,
-        //        BlockMatcher.forBlock(Blocks.STONE));
+        addOreSpawn(ModBlocks.rubyOre.getDefaultState(), world, random, chunkX, chunkZ, 16, 16, 10, 20, 10, 80,
+                BlockMatcher.forBlock(Blocks.STONE));
         addOreSpawn(ModBlocks.rubyOre.getDefaultState(), world, random, chunkX, chunkZ, 16, 16, 10, 20, 10, 80,
                 BlockMatcher.forBlock(Blocks.STONE));
     }

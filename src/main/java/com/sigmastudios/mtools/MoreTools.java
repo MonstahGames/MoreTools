@@ -16,6 +16,8 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 @Mod(modid = MoreTools.MODID, version = MoreTools.VERSION, name = MoreTools.NAME)
 public class MoreTools
@@ -26,6 +28,8 @@ public class MoreTools
 
     public static final String CLProxy = "com.sigmastudios.mtools.proxy.ClientProxy";
     public static final String CProxy = "com.sigmastudios.mtools.proxy.CommonProxy";
+
+    public static final Logger LOGGER = LogManager.getLogger(MODID.toUpperCase());
 
     @SidedProxy(clientSide = CLProxy, serverSide = CProxy)
     public static CommonProxy proxy;

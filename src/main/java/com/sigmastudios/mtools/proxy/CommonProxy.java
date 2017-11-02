@@ -9,11 +9,6 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class CommonProxy
 {
-    public void registerItemRenderer (Item item, int meta, String id)
-    {
-
-    }
-
     public void preInit(FMLPreInitializationEvent event)
     {
 
@@ -23,6 +18,10 @@ public class CommonProxy
         GameRegistry.registerWorldGenerator(new ModWorldGen(), 0);
     }
     public void postInit(FMLPostInitializationEvent event)
+    {
+
+    }
+    public void registerItemRenderer (Item item, int meta, String id)
     {
 
     }
