@@ -19,26 +19,28 @@ public class ModWorldGen implements IWorldGenerator
 {
     @Override
     public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator,
-                         IChunkProvider chunkProvider) {
+                         IChunkProvider chunkProvider)
+    {
         int dimension = world.provider.getDimension();
         {
-            if (dimension == 0) {
+            if (dimension == 0)
+            {
                 genRuby(world, random, chunkX * 16, chunkZ * 16);
             }
         }
     }
 
-    private void genRuby(World world, Random random, int chunkX, int chunkZ) {
-        addOreSpawn(ModBlocks.rubyOre.getDefaultState(), world, random, chunkX, chunkZ, 16, 16, 10, 20, 10, 80,
-                BlockMatcher.forBlock(Blocks.STONE));
-        addOreSpawn(ModBlocks.rubyOre.getDefaultState(), world, random, chunkX, chunkZ, 16, 16, 10, 20, 10, 80,
-                BlockMatcher.forBlock(Blocks.STONE));
+    private void genRuby(World world, Random random, int chunkX, int chunkZ)
+    {
+        addOreSpawn(ModBlocks.rubyOre.getDefaultState(), world, random, chunkX, chunkZ, 16, 16, 5, 4, 4, 20, BlockMatcher.forBlock(Blocks.STONE));
     }
 
     private void addOreSpawn(IBlockState block, World world, Random random, int blockXPos, int blockZPos, int maxX,
-                             int maxZ, int maxVeinSize, int chance, int minY, int maxY, Predicate<IBlockState> blockToSpawnIn) {
+                             int maxZ, int maxVeinSize, int chance, int minY, int maxY, Predicate<IBlockState> blockToSpawnIn)
+    {
         int diffMinMaxY = maxY - minY;
-        for (int x = 0; x < chance; x++) {
+        for (int x = 0; x < chance; x++)
+        {
             int posX = blockXPos + random.nextInt(maxX);
             int posY = minY + random.nextInt(diffMinMaxY);
             int posZ = blockZPos + random.nextInt(maxZ);
