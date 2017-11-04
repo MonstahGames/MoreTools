@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    " # ",
+    " s "
+  ],
+  "key":
+  {
+    "#":
+    {
+      "item": "mtools:marble_ingot"
+    },
+    "s":
+    {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "mtools:marble_sword"
+  }
+}
