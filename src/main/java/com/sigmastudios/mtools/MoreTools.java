@@ -4,7 +4,10 @@ import com.sigmastudios.mtools.item.ModItems;
 import com.sigmastudios.mtools.item.ModSmelting;
 import com.sigmastudios.mtools.item.ore.block.ModBlocks;
 import com.sigmastudios.mtools.proxy.CommonProxy;
-import com.sigmastudios.mtools.tab.CreativeTab;
+import com.sigmastudios.mtools.tab.ArmorTab;
+import com.sigmastudios.mtools.tab.BlocksTab;
+import com.sigmastudios.mtools.tab.ItemsTab;
+import com.sigmastudios.mtools.tab.ToolsTab;
 import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.SoundEvents;
@@ -44,7 +47,10 @@ public class MoreTools
     @Mod.Instance
     public static MoreTools instance;
 
-    public static CreativeTab tab;
+    public static ToolsTab toolsTab;
+    public static ArmorTab armorTab;
+    public static BlocksTab blocksTab;
+    public static ItemsTab itemsTab;
 
     @Mod.EventBusSubscriber
     public static class RegistrationHandler
@@ -71,7 +77,11 @@ public class MoreTools
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
-        tab = new CreativeTab(CreativeTabs.getNextID(), "mtools_tab");
+        toolsTab = new ToolsTab(CreativeTabs.getNextID(), "mtools_tab");
+        armorTab = new ArmorTab(CreativeTabs.getNextID(), "mtools_armortab");
+        blocksTab = new BlocksTab(CreativeTabs.getNextID(), "mtools_blockstab");
+        itemsTab = new ItemsTab(CreativeTabs.getNextID(), "mtools_itemstab");
+
         proxy.preInit(event);
     }
     @EventHandler

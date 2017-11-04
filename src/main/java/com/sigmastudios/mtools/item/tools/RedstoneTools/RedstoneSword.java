@@ -11,7 +11,7 @@ public class RedstoneSword extends ItemSword
         super(material);
         this.setUnlocalizedName(name);
         this.setRegistryName(name);
-        this.setCreativeTab(MoreTools.tab);
+        this.setCreativeTab(MoreTools.toolsTab);
     }
     public void registerItemModel(String name)
     {

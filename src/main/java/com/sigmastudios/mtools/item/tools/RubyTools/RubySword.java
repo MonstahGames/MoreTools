@@ -12,7 +12,7 @@ public class RubySword extends ItemSword
         super(material);
         setUnlocalizedName(name);
         setRegistryName(name);
-        setCreativeTab(MoreTools.tab);
+        setCreativeTab(MoreTools.toolsTab);
     }
     @Override
     public EnumRarity getRarity(ItemStack stack)

@@ -11,6 +11,6 @@ public class RubyBlock extends BlockBase
         super(Material.ROCK, name);
         setHardness(3F);
         setResistance(4.9F);
-        this.setCreativeTab(MoreTools.tab);
+        this.setCreativeTab(MoreTools.blocksTab);
     }
 }

@@ -12,7 +12,7 @@ public class RubyIngot extends Item
         super();
         setUnlocalizedName(name);
         setRegistryName(name);
-        setCreativeTab(MoreTools.tab);
+        setCreativeTab(MoreTools.itemsTab);
     }
     public void registerItemModel(String name)
     {

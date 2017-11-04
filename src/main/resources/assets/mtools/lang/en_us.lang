@@ -1,4 +1,7 @@
-itemGroup.mtools_tab=More Tools
+itemGroup.mtools_armorTab=More Tools ARMOR
+itemGroup.mtools_blocksTab=More Tools BLOCKS
+itemGroup.mtools_itemsTab=More Tools ITEMS
+
 item.ruby_pickaxe.name=Ruby Pickaxe
 item.ruby_sword.name=Ruby Sword
 item.ruby_ingot.name=Ruby Ingot
@@ -13,3 +16,4 @@ item.redstone_sword.name=Redstone Sword
 item.redstone_pickaxe.name=Redstone Pickaxe
 item.marble_sword.name=Marble Sword
 item.marble_ingot.name=Marble Ingot
+tile.marble_ore.name=Marble Ore

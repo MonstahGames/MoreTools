@@ -10,7 +10,7 @@ public class MarbleIngot extends Item
         super();
         this.setUnlocalizedName(name);
         this.setRegistryName(name);
-        this.setCreativeTab(MoreTools.tab);
+        this.setCreativeTab(MoreTools.itemsTab);
     }
     public void registerItemModel (String name)
     {

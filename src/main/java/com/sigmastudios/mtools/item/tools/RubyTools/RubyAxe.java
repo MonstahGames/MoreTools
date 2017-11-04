@@ -12,7 +12,7 @@ public class RubyAxe extends ItemAxe
         super(material, damage, speed);
         setUnlocalizedName(name);
         setRegistryName(name);
-        setCreativeTab(MoreTools.tab);
+        setCreativeTab(MoreTools.toolsTab);
     }
     @Override
     public EnumRarity getRarity(ItemStack stack)

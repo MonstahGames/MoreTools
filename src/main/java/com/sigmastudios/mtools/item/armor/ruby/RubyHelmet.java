@@ -13,7 +13,7 @@ public class RubyHelmet extends ItemArmor
         super(material, 0, slot);
         setRegistryName(name);
         setUnlocalizedName(name);
-        this.setCreativeTab(MoreTools.tab);
+        this.setCreativeTab(MoreTools.armorTab);
     }
     public void registerItemModel(String name)
     {

@@ -10,7 +10,7 @@ public class RedstonePickaxe extends ItemPickaxe
         super(material);
         this.setUnlocalizedName(name);
         this.setRegistryName(name);
-        this.setCreativeTab(MoreTools.tab);
+        this.setCreativeTab(MoreTools.toolsTab);
     }
     public void registerItemModel(String name)
     {

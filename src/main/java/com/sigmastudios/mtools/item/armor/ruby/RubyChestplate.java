@@ -11,7 +11,7 @@ public class RubyChestplate extends ItemArmor
         super(materialIn, 0, equipmentSlotIn);
         this.setUnlocalizedName(name);
         this.setRegistryName(name);
-        this.setCreativeTab(MoreTools.tab);
+        this.setCreativeTab(MoreTools.armorTab);
     }
     public void registerItemModel (String name)
     {
