@@ -5,6 +5,8 @@ import com.sigmastudios.mtools.item.armor.ruby.RubyBoots;
 import com.sigmastudios.mtools.item.armor.ruby.RubyChestplate;
 import com.sigmastudios.mtools.item.armor.ruby.RubyHelmet;
 import com.sigmastudios.mtools.item.armor.ruby.RubyLeggings;
+import com.sigmastudios.mtools.item.tools.RedstoneTools.RedstoneAxe;
+import com.sigmastudios.mtools.item.tools.RedstoneTools.RedstonePickaxe;
 import com.sigmastudios.mtools.item.tools.RedstoneTools.RedstoneSword;
 import com.sigmastudios.mtools.item.tools.RubyTools.RubyAxe;
 import com.sigmastudios.mtools.item.tools.RubyTools.RubyShovel;
@@ -24,6 +26,8 @@ public class ModItems
     public static Item.ToolMaterial RUBYSHOVEL = EnumHelper.addToolMaterial("RUBYSHOVEL", 3, 350, 8.0F, 1.0F, 1);
 
     public static Item.ToolMaterial REDSTONESWORD = EnumHelper.addToolMaterial("REDSTONESWORD", 1, 145, 5.0F, 1.5F, 18);
+    public static Item.ToolMaterial REDSTONEPICKAXE = EnumHelper.addToolMaterial("REDSTONEPICKAXE", 1, 1250, 5.0F, 2F, 18);
+    public static Item.ToolMaterial REDSTONEAXE = EnumHelper.addToolMaterial("REDSTONEAXE", 1, 85, 5.0F, 1.5F, 10);
 
     public static RubyIngot rubyIngot = new RubyIngot("ruby_ingot");
     public static RubySword rubySword = new RubySword(RUBYSWORD, "ruby_sword");
@@ -37,10 +41,12 @@ public class ModItems
     public static RubyBoots rubyBoots = new RubyBoots(MoreTools.rubyArmorMaterial, EntityEquipmentSlot.FEET, "ruby_boots");
 
     public static RedstoneSword redstoneSword = new RedstoneSword(REDSTONESWORD, "redstone_sword");
+    public static RedstonePickaxe redstonePickaxe = new RedstonePickaxe(REDSTONEPICKAXE, "redstone_pickaxe");
+    public static RedstoneAxe redstoneAxe = new RedstoneAxe(REDSTONEAXE, "redstone_axe");
 
     public static void register(IForgeRegistry<Item> registry)
     {
-        registry.registerAll(rubyIngot, rubySword, rubyPickaxe, rubyAxe, rubyShovel, rubyHelmet, rubyChestplate, rubyLeggings, rubyBoots, redstoneSword);
+        registry.registerAll(rubyIngot, rubySword, rubyPickaxe, rubyAxe, rubyShovel, rubyHelmet, rubyChestplate, rubyLeggings, rubyBoots, redstoneSword, redstonePickaxe, redstoneAxe);
     }
     public static void registerModels ()
     {
@@ -54,5 +60,7 @@ public class ModItems
         rubyLeggings.registerItemModel("ruby_leggings");
         rubyBoots.registerItemModel("ruby_boots");
         redstoneSword.registerItemModel("redstone_sword");
+        redstonePickaxe.registerItemModel("redstone_pickaxe");
+        redstoneAxe.registerItemModel("redstone_axe");
     }
 }
