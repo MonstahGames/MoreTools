@@ -1,19 +1,25 @@
-itemGroup.mtools_armorTab=More Tools ARMOR
-itemGroup.mtools_blocksTab=More Tools BLOCKS
-itemGroup.mtools_itemsTab=More Tools ITEMS
+#MoreTools Mod en_US Language File
+#SigmaStudios (c) 2017
 
-item.ruby_pickaxe.name=Ruby Pickaxe
+itemGroup.mtools_toolstab=More Tools TOOLS
 item.ruby_sword.name=Ruby Sword
-item.ruby_ingot.name=Ruby Ingot
+item.ruby_pickaxe.name=Ruby Pickaxe
 item.ruby_axe.name=Ruby Axe
 item.ruby_shovel.name=Ruby Shovel
-tile.ruby_ore.name=Ruby Ore
-tile.ruby_block.name=Ruby Block
+
+itemGroup.mtools_armortab=More Tools ARMOR
 item.ruby_helmet.name=Ruby Helmet
 item.ruby_chestplate.name=Ruby Chestplate
 item.ruby_leggings.name=Ruby Leggings
+
+itemGroup.mtools_blockstab=More Tools BLOCKS
+tile.ruby_ore.name=Ruby Ore
+tile.ruby_block.name=Ruby Block
+tile.marble_ore.name=Marble Ore
+
+itemGroup.mtools_itemstab=More Tools ITEMS
 item.redstone_sword.name=Redstone Sword
 item.redstone_pickaxe.name=Redstone Pickaxe
 item.marble_sword.name=Marble Sword
+item.ruby_ingot.name=Ruby Ingot
 item.marble_ingot.name=Marble Ingot
-tile.marble_ore.name=Marble Ore

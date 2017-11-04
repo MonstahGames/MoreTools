@@ -77,7 +77,7 @@ public class MoreTools
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
-        toolsTab = new ToolsTab(CreativeTabs.getNextID(), "mtools_tab");
+        toolsTab = new ToolsTab(CreativeTabs.getNextID(), "mtools_toolstab");
         armorTab = new ArmorTab(CreativeTabs.getNextID(), "mtools_armortab");
         blocksTab = new BlocksTab(CreativeTabs.getNextID(), "mtools_blockstab");
         itemsTab = new ItemsTab(CreativeTabs.getNextID(), "mtools_itemstab");
