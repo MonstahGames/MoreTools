@@ -5,6 +5,7 @@ import com.sigmastudios.mtools.item.armor.ruby.RubyBoots;
 import com.sigmastudios.mtools.item.armor.ruby.RubyChestplate;
 import com.sigmastudios.mtools.item.armor.ruby.RubyHelmet;
 import com.sigmastudios.mtools.item.armor.ruby.RubyLeggings;
+import com.sigmastudios.mtools.item.ore.item.MarbleIngot;
 import com.sigmastudios.mtools.item.tools.MarbleTools.MarbleSword;
 import com.sigmastudios.mtools.item.tools.RedstoneTools.RedstonePickaxe;
 import com.sigmastudios.mtools.item.tools.RedstoneTools.RedstoneSword;
@@ -46,11 +47,22 @@ public class ModItems
     public static RedstonePickaxe redstonePickaxe = new RedstonePickaxe(REDSTONEPICKAXE, "redstone_pickaxe");
     //public static RedstoneAxe redstoneAxe = new RedstoneAxe(REDSTONEAXE, "redstone_axe");
 
+    public static MarbleIngot marbleIngot = new MarbleIngot("marble_ingot");
     public static MarbleSword marbleSword = new MarbleSword(MARBLESWORD, "marble_sword");
 
     public static void register(IForgeRegistry<Item> registry)
     {
-        registry.registerAll(rubyIngot, rubySword, rubyPickaxe, rubyAxe, rubyShovel, rubyHelmet, rubyChestplate, rubyLeggings, rubyBoots, redstoneSword, redstonePickaxe, marbleSword);
+        registry.registerAll(rubyIngot,
+                rubySword,
+                rubyPickaxe,
+                rubyAxe,
+                rubyShovel,
+                rubyHelmet, rubyChestplate,
+                rubyLeggings, rubyBoots,
+                redstoneSword,
+                redstonePickaxe,
+                marbleSword,
+                marbleIngot);
     }
     public static void registerModels ()
     {
@@ -66,5 +78,6 @@ public class ModItems
         redstoneSword.registerItemModel("redstone_sword");
         redstonePickaxe.registerItemModel("redstone_pickaxe");
         marbleSword.registerItemModel("marble_sword");
+        marbleIngot.registerItemModel("marble_ingot");
     }
 }
