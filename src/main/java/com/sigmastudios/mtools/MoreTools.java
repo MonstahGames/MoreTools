@@ -31,12 +31,14 @@ public class MoreTools
 {
     public static final String MODID = "mtools";
     public static final String VERSION = "1.0";
-    public static final String NAME = "More tools";
+    public static final String NAME = "More Tools";
 
     public static final String CLProxy = "com.sigmastudios.mtools.proxy.ClientProxy";
     public static final String CProxy = "com.sigmastudios.mtools.proxy.CommonProxy";
 
-    public static final Logger LOGGER = LogManager.getLogger(MODID.toUpperCase());
+    public static Logger LOGGER = LogManager.getLogger(MODID.toUpperCase());
+
+    public static boolean DEBUG = true;
 
     public static final ItemArmor.ArmorMaterial rubyArmorMaterial = EnumHelper.addArmorMaterial("RUBY", MODID + ":ruby", 15, new int[]{2, 5, 6, 2}, 9, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F);
 
@@ -77,6 +79,12 @@ public class MoreTools
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
+        LOGGER = event.getModLog();
+        if(DEBUG)
+        {
+            LOGGER.info("Initializing More Tools");
+        }
+
         toolsTab = new ToolsTab(CreativeTabs.getNextID(), "mtools_toolstab");
         armorTab = new ArmorTab(CreativeTabs.getNextID(), "mtools_armortab");
         blocksTab = new BlocksTab(CreativeTabs.getNextID(), "mtools_blockstab");
@@ -93,6 +101,10 @@ public class MoreTools
     @EventHandler
     public  void postInit(FMLPostInitializationEvent event)
     {
+        if (DEBUG)
+        {
+            LOGGER.info("More Tools Loaded!");
+        }
         proxy.postInit(event);
     }
 }
