@@ -23,12 +23,12 @@ public class ModWorldGen implements IWorldGenerator
         {
             if (dimension == 0)
             {
-                genRuby(world, random, chunkX * 16, chunkZ * 16);
+                genOres(world, random, chunkX * 16, chunkZ * 16);
             }
         }
     }
 
-    private void genRuby(World world, Random random, int chunkX, int chunkZ)
+    private void genOres(World world, Random random, int chunkX, int chunkZ)
     {
         addOreSpawn(ModBlocks.rubyOre.getDefaultState(), world, random, chunkX, chunkZ, 16, 16, 5, 4, 4, 20, BlockMatcher.forBlock(Blocks.STONE));
         addOreSpawn(ModBlocks.marbleOre.getDefaultState(), world, random, chunkX, chunkZ, 16, 16 , 5, 10, 10, 40, BlockMatcher.forBlock(Blocks.STONE));

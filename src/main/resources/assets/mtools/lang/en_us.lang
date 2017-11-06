@@ -17,6 +17,7 @@ itemGroup.mtools_blockstab=More Tools BLOCKS
 tile.ruby_ore.name=Ruby Ore
 tile.ruby_block.name=Ruby Block
 tile.marble_ore.name=Marble Ore
+tile.marble_block.name=Marble Block
 
 itemGroup.mtools_itemstab=More Tools ITEMS
 item.redstone_sword.name=Redstone Sword
